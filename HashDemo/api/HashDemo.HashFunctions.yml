@@ -1,0 +1,396 @@
+### YamlMime:ManagedReference
+items:
+- uid: HashDemo.HashFunctions
+  commentId: T:HashDemo.HashFunctions
+  id: HashFunctions
+  parent: HashDemo
+  children:
+  - HashDemo.HashFunctions.ComputeSha256Hash(System.String)
+  - HashDemo.HashFunctions.SimpleHash(System.String)
+  langs:
+  - csharp
+  - vb
+  name: HashFunctions
+  nameWithType: HashFunctions
+  fullName: HashDemo.HashFunctions
+  type: Class
+  source:
+    id: HashFunctions
+    path: D:\HashDemo\HashDemo\Program.cs
+    startLine: 7
+  assemblies:
+  - HashDemo
+  namespace: HashDemo
+  summary: 'Содержит реализации хэш-функций: ручную реализацию SHA-256 и упрощённую демонстрационную функцию.'
+  example: []
+  syntax:
+    content: public static class HashFunctions
+    content.vb: Public Module HashFunctions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HashDemo.HashFunctions.ComputeSha256Hash(System.String)
+  commentId: M:HashDemo.HashFunctions.ComputeSha256Hash(System.String)
+  id: ComputeSha256Hash(System.String)
+  parent: HashDemo.HashFunctions
+  langs:
+  - csharp
+  - vb
+  name: ComputeSha256Hash(string)
+  nameWithType: HashFunctions.ComputeSha256Hash(string)
+  fullName: HashDemo.HashFunctions.ComputeSha256Hash(string)
+  type: Method
+  source:
+    id: ComputeSha256Hash
+    path: D:\HashDemo\HashDemo\Program.cs
+    startLine: 35
+  assemblies:
+  - HashDemo
+  namespace: HashDemo
+  summary: Вычисляет хэш SHA-256 для заданной строки.
+  example: []
+  syntax:
+    content: public static string ComputeSha256Hash(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: Входная строка в кодировке UTF-8.
+    return:
+      type: System.String
+      description: Хэш в виде шестнадцатеричной строки (64 символа, строчные буквы).
+    content.vb: Public Shared Function ComputeSha256Hash(input As String) As String
+  overload: HashDemo.HashFunctions.ComputeSha256Hash*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Если входная строка равна null.
+  nameWithType.vb: HashFunctions.ComputeSha256Hash(String)
+  fullName.vb: HashDemo.HashFunctions.ComputeSha256Hash(String)
+  name.vb: ComputeSha256Hash(String)
+- uid: HashDemo.HashFunctions.SimpleHash(System.String)
+  commentId: M:HashDemo.HashFunctions.SimpleHash(System.String)
+  id: SimpleHash(System.String)
+  parent: HashDemo.HashFunctions
+  langs:
+  - csharp
+  - vb
+  name: SimpleHash(string)
+  nameWithType: HashFunctions.SimpleHash(string)
+  fullName: HashDemo.HashFunctions.SimpleHash(string)
+  type: Method
+  source:
+    id: SimpleHash
+    path: D:\HashDemo\HashDemo\Program.cs
+    startLine: 158
+  assemblies:
+  - HashDemo
+  namespace: HashDemo
+  summary: Упрощённая хэш-функция, возвращающая сумму ASCII-кодов символов по модулю 100.
+  remarks: 'Пример коллизии: "ab" и "ba" → оба дают 195 % 100 = 95.'
+  example: []
+  syntax:
+    content: public static int SimpleHash(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: Входная строка для хэширования.
+    return:
+      type: System.Int32
+      description: Целое число от 0 до 99 — результат упрощённого хэширования.
+    content.vb: Public Shared Function SimpleHash(input As String) As Integer
+  overload: HashDemo.HashFunctions.SimpleHash*
+  nameWithType.vb: HashFunctions.SimpleHash(String)
+  fullName.vb: HashDemo.HashFunctions.SimpleHash(String)
+  name.vb: SimpleHash(String)
+references:
+- uid: HashDemo
+  commentId: N:HashDemo
+  href: HashDemo.html
+  name: HashDemo
+  nameWithType: HashDemo
+  fullName: HashDemo
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: HashDemo.HashFunctions.ComputeSha256Hash*
+  commentId: Overload:HashDemo.HashFunctions.ComputeSha256Hash
+  href: HashDemo.HashFunctions.html#HashDemo_HashFunctions_ComputeSha256Hash_System_String_
+  name: ComputeSha256Hash
+  nameWithType: HashFunctions.ComputeSha256Hash
+  fullName: HashDemo.HashFunctions.ComputeSha256Hash
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: HashDemo.HashFunctions.SimpleHash*
+  commentId: Overload:HashDemo.HashFunctions.SimpleHash
+  href: HashDemo.HashFunctions.html#HashDemo_HashFunctions_SimpleHash_System_String_
+  name: SimpleHash
+  nameWithType: HashFunctions.SimpleHash
+  fullName: HashDemo.HashFunctions.SimpleHash
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

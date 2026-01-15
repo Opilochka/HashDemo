@@ -1,0 +1,8 @@
+{
+  "HashDemo": "HashDemo.yml",
+  "HashDemo.HashFunctions": "HashDemo.HashFunctions.yml",
+  "HashDemo.HashFunctions.ComputeSha256Hash(System.String)": "HashDemo.HashFunctions.yml",
+  "HashDemo.HashFunctions.SimpleHash(System.String)": "HashDemo.HashFunctions.yml",
+  "HashDemo.Program": "HashDemo.Program.yml",
+  "HashDemo.Program.Main(System.String[])": "HashDemo.Program.yml"
+}

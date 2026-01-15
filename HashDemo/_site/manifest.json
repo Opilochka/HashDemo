@@ -1,0 +1,66 @@
+{
+  "source_base_path": "D:/HashDemo/HashDemo",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HashDemo.HashFunctions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HashDemo.HashFunctions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HashDemo.HashFunctions",
+      "Summary": "<p sourcefile=\"api/HashDemo.HashFunctions.yml\" sourcestartlinenumber=\"1\">Содержит реализации хэш-функций: ручную реализацию SHA-256 и упрощённую демонстрационную функцию.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HashDemo.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HashDemo.Program.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HashDemo.Program",
+      "Summary": "<p sourcefile=\"api/HashDemo.Program.yml\" sourcestartlinenumber=\"1\">Демонстрационный класс для запуска примеров хэширования и поиска коллизий.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HashDemo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HashDemo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "HashDemo",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

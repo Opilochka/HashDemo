@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: HashDemo
+  commentId: N:HashDemo
+  id: HashDemo
+  children:
+  - HashDemo.HashFunctions
+  - HashDemo.Program
+  langs:
+  - csharp
+  - vb
+  name: HashDemo
+  nameWithType: HashDemo
+  fullName: HashDemo
+  type: Namespace
+  assemblies:
+  - HashDemo
+references:
+- uid: HashDemo.HashFunctions
+  commentId: T:HashDemo.HashFunctions
+  href: HashDemo.HashFunctions.html
+  name: HashFunctions
+  nameWithType: HashFunctions
+  fullName: HashDemo.HashFunctions
+- uid: HashDemo.Program
+  commentId: T:HashDemo.Program
+  href: HashDemo.Program.html
+  name: Program
+  nameWithType: Program
+  fullName: HashDemo.Program
